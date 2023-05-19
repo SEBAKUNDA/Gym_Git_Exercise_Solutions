@@ -39,7 +39,7 @@ Eric-2:git--exercise mac$
 #bundle 1
 exercise2
 
-bash
+```bash
 Eric-2:Gym_Git_Exercise_Solutions mac$ stash list
 bash: stash: command not found
 Eric-2:Gym_Git_Exercise_Solutions mac$ git stash list
@@ -347,4 +347,32 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 Eric-2:Gym_Git_Exercise_Solutions mac$ 
 
+```
+#bundle2
+
+#Exercise1
+
+```bash
+Eric-2:Gym_Git_Exercise_Solutions mac$ git checkout ft/bundle-2
+swiched to ft/bundle-2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        service.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+Eric-2:Gym_Git_Exercise_Solutions mac$  git add  service.html
+Eric-2:Gym_Git_Exercise_Solutions mac$  git commit -m"service commit"
+[main a2c67ce] service commit
+ 1 file changed, 12 insertions(+)
+ create mode 100644 service.html
+Eric-2:Gym_Git_Exercise_Solutions mac$ git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 472 bytes | 472.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/SEBAKUNDA/Gym_Git_Exercise_Solutions.git
+   7fbcc5f..a2c67ce  main -> main
 ```
