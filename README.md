@@ -380,6 +380,8 @@ To https://github.com/SEBAKUNDA/Gym_Git_Exercise_Solutions.git
 #bundle2
 #Exercise2
 ```bash
-
+Eric-2:Gym_Git_Exercise_Solutions mac$ git branch ft/service-redesign
+Eric-2:Gym_Git_Exercise_Solutions mac$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
 
 ```
