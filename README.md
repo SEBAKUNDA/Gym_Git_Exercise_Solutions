@@ -377,9 +377,3 @@ To https://github.com/SEBAKUNDA/Gym_Git_Exercise_Solutions.git
    7fbcc5f..a2c67ce  main -> main
 ```
 
-#bundle2
-#Exercise2
-```bash
-
-
-```
