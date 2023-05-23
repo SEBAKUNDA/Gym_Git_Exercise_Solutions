@@ -376,7 +376,7 @@ To https://github.com/SEBAKUNDA/Gym_Git_Exercise_Solutions.git
    7fbcc5f..a2c67ce  main -> main
 ```
 #bundle2
-#Exercise
+#Exercise2
 ```bash
 Eric-2:Gym_Git_Exercise_Solutions mac$  git checkout -b ft/service-redesign
 M       README.md
