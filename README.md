@@ -640,7 +640,6 @@ Eric-2:Gym_Git_Exercise_Solutions mac$  git merge ft/service-redesign
 Already up to date.
 ```
 
-
 Eric-2:Gym_Git_Exercise_Solutions mac$   git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
@@ -803,4 +802,100 @@ Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 Eric-2:Gym_Git_Exercise_Solutions mac$  git merge ft/service-redesign
 Already up to date.
+```
+#bundle4
+# exercise1
+```bash
+Eric-2:Gym_Git_Exercise_Solutions mac$ git branch
+  ft/bundle-2
+  ft/contact-page
+Eric-2:Gym_Git_Exercise_Solutions mac$ git checkout main
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 1 and 6 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+Eric-2:Gym_Git_Exercise_Solutions mac$ git remote add git-copy https://github.com/exampleuser/git-copy-repo.git
+
+Eric-2:Gym_Git_Exercise_Solutions mac$  git add .
+Eric-2:Gym_Git_Exercise_Solutions mac$  git commit -m"changes on question 4"
+[main 707741c] changes on question 4
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+
+
+
+
+Eric-2:Gym_Git_Exercise_Solutions mac$ git remote -v
+git-copy        https://github.com/exampleuser/git-copy-repo.git (fetch)
+git-copy        https://github.com/exampleuser/git-copy-repo.git (push)
+origin  https://github.com/SEBAKUNDA/Gym_Git_Exercise_Solutions.git (fetch)
+origin  https://github.com/SEBAKUNDA/Gym_Git_Exercise_Solutions.git (push)
+
+
+Eric-2:Gym_Git_Exercise_Solutions mac$ git remote add git-copy https://github.com/SEBAKUNDA/New_changes.git
+fatal: remote git-copy already exists.
+
+
+Eric-2:Gym_Git_Exercise_Solutions mac$ git add .
+Eric-2:Gym_Git_Exercise_Solutions mac$  git commit -m"commmit"
+[main 3dcaf4f] commmit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+
+
+
+
+
+Eric-2:Gym_Git_Exercise_Solutions mac$  git add .
+Eric-2:Gym_Git_Exercise_Solutions mac$ git commit -m"git"
+\[main 9de3abe] git
+Eric-2:Gym_Git_Exercise_Solutions mac$  git pull origin main
+From https://github.com/SEBAKUNDA/Gym_Git_Exercise_Solutions
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Eric-2:Gym_Git_Exercise_Solutions mac$  git push origin main
+Counting objects: 13, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 1.25 KiB | 638.00 KiB/s, done.
+Total 13 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), completed with 4 local objects.
+To https://github.com/SEBAKUNDA/Gym_Git_Exercise_Solutions.git
+   9abe8a7..9de3abe  main -> main
+Eric-2:Gym_Git_Exercise_Solutions mac$ git remote add git-copy https://github.com/exampleuser/git-copy-repo.git
+fatal: remote git-copy already exists.
+Eric-2:Gym_Git_Exercise_Solutions mac$  cd https://github.com/SEBAKUNDA/New_changes.git
+bash: cd: https://github.com/SEBAKUNDA/New_changes.git: No such file or directory
+Eric-2:Gym_Git_Exercise_Solutions mac$ git branch
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+  ft/service-redesign
+  ft/team-page
+* main
+  remotes
+Eric-2:Gym_Git_Exercise_Solutions mac$ git checkout -b git-copy
+Switched to a new branch 'git-copy'
+
+Eric-2:Gym_Git_Exercise_Solutions mac$  git add .
+Eric-2:Gym_Git_Exercise_Solutions mac$ git commit -m"committ"
+[git-copy 80e2b6e] committ
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Eric-2:Gym_Git_Exercise_Solutions mac$   git push --set-upstream origin git-copy
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'git-copy' on GitHub by visiting:
+remote:      https://github.com/SEBAKUNDA/Gym_Git_Exercise_Solutions/pull/new/git-copy
+remote: 
+To https://github.com/SEBAKUNDA/Gym_Git_Exercise_Solutions.git
+ * [new branch]      git-copy -> git-copy
+Branch 'git-copy' set up to track remote branch 'git-copy' from 'origin'.
+Eric-2:Gym_Git_Exercise_Solutions mac$ c
 ```
