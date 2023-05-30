@@ -1339,4 +1339,101 @@ To https://github.com/SEBAKUNDA/Gym_Git_Exercise_Solutions.git
    43c437d..6da135b  ft/footer -> ft/footer
 Eric-2:Gym_Git_Exercise_Solutions mac$ 
 ```
+#bundle 4
+#Exercise2
+
+```bash
+
+Eric-2:Gym_Git_Exercise_Solutions mac$ git checkout -b  ft/footer
+Switched to a new branch 'ft/footer'
+Eric-2:Gym_Git_Exercise_Solutions mac$  git add  footer.html
+Eric-2:Gym_Git_Exercise_Solutions mac$ git commit -m"commit of footer"
+[ft/footer 1a112ba] commit of footer
+ 1 file changed, 12 insertions(+)
+ create mode 100644 footer.html
+Eric-2:Gym_Git_Exercise_Solutions mac$ git add    footer1.html
+Eric-2:Gym_Git_Exercise_Solutions mac$  git commit -m" footer1"
+[ft/footer 79e55e1]  footer1
+ 1 file changed, 12 insertions(+)
+ create mode 100644 footer1.html
+Eric-2:Gym_Git_Exercise_Solutions mac$ git status
+On branch main
+Your branch is behind 'origin/main' by 8 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Eric-2:Gym_Git_Exercise_Solutions mac$  git add .
+Eric-2:Gym_Git_Exercise_Solutions mac$ git commit -m"commit"
+Eric-2:Gym_Git_Exercise_Solutions mac$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+Eric-2:Gym_Git_Exercise_Solutions mac$ git add footer.html
+Eric-2:Gym_Git_Exercise_Solutions mac$ git commit -m"footer"
+[ft/footer 05a20fe] footer
+ 1 file changed, 12 insertions(+)
+ create mode 100644 footer.html
+Eric-2:Gym_Git_Exercise_Solutions mac$  git add footer1.html
+Eric-2:Gym_Git_Exercise_Solutions mac$ git commit -m"commit"
+[ft/footer 4f51007] commit
+ 1 file changed, 12 insertions(+)
+ create mode 100644 footer1.html
+Eric-2:Gym_Git_Exercise_Solutions mac$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+Eric-2:Gym_Git_Exercise_Solutions mac$  git status
+On branch ft/footer
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+Eric-2:Gym_Git_Exercise_Solutions mac$ git push --set-upstream origin ft/footer
+Counting objects: 8, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 974 bytes | 974.00 KiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+To https://github.com/SEBAKUNDA/Gym_Git_Exercise_Solutions.git
+   95fbe27..25ec727  ft/footer -> ft/footer
+Branch 'ft/footer' set up to track remote branch 'ft/footer' from 'origin'.
+Eric-2:Gym_Git_Exercise_Solutions mac$ git checkout main
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 1 and 8 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+Eric-2:Gym_Git_Exercise_Solutions mac$  git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+Eric-2:Gym_Git_Exercise_Solutions mac$ git merge --squash ft/footer
+Updating 3545ea8..25ec727
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html  | 12 ++++++++++++
+ footer1.html | 12 ++++++++++++
+ 2 files changed, 24 insertions(+)
+ create mode 100644 footer.html
+ create mode 100644 footer1.html
+Eric-2:Gym_Git_Exercise_Solutions mac$  git add .
+Eric-2:Gym_Git_Exercise_Solutions mac$  git commit -m" commting two file"
+[ft/squashing 1c5fe3c]  commting two file
+ 2 files changed, 24 insertions(+)
+ create mode 100644 footer.html
+ create mode 100644 footer1.html
+Eric-2:Gym_Git_Exercise_Solutions mac$ git rebase -i HEAD~2
+Successfully rebased and updated refs/heads/ft/squashing.
+Eric-2:Gym_Git_Exercise_Solutions mac$ git checkout ft/footer
+Switched to branch 'ft/footer'
+Your branch is up to date with 'origin/ft/footer'.
+Eric-2:Gym_Git_Exercise_Solutions mac$ git merge --squash origin/ft/footer
+ (nothing to squash)Already up to date.
+Eric-2:Gym_Git_Exercise_Solutions mac$ git status
+On branch ft/footer
+Your branch is up to date with 'origin/ft/footer'.
+
+nothing to commit, working tree clean
+Eric-2:Gym_Git_Exercise_Solutions mac$ git push
+fatal: unable to access 'https://github.com/SEBAKUNDA/Gym_Git_Exercise_Solutions.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443 
+Eric-2:Gym_Git_Exercise_Solutions mac$ git push
+Everything up-to-date
+Eric-2:Gym_Git_Exercise_Solutions mac$ git push
+Everything up-to-date
+Eric-2:Gym_Git_Exercise_Solutions mac$ 
+```
 
