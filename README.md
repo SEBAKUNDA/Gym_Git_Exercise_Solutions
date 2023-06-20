@@ -1499,3 +1499,65 @@ To https://github.com/SEBAKUNDA/git-cafe-exercise.git
 Branch 'feature-branch' set up to track remote branch 'feature-branch' from 'origin'.
 Eric-2:git-cafe-exercise mac$ 
  ```
+ # Exercise2
+ ```bash 
+Eric-2:git-cafe-exercise mac$  git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Eric-2:git-cafe-exercise mac$  git add .
+Eric-2:git-cafe-exercise mac$  git commit -m"forked project first commit"
+Eric-2:git-cafe-exercise mac$ git checkout -b feature-branch
+Switched to a new branch 'feature-branch'
+Eric-2:git-cafe-exercise mac$  git status
+On branch feature-branch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        menu.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+Eric-2:git-cafe-exercise mac$ git checkout -b bugfix-branch
+Switched to a new branch 'bugfix-branch'
+Eric-2:git-cafe-exercise mac$  git status
+On branch bugfix-branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index-4.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Eric-2:git-cafe-exercise mac$  git add .
+Eric-2:git-cafe-exercise mac$  git commit -m"next commit "
+[bugfix-branch 6ae2047] next commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Eric-2:git-cafe-exercise mac$  git push
+fatal: The current branch bugfix-branch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin bugfix-branch
+
+Eric-2:git-cafe-exercise mac$  git push --set-upstream origin bugfix-branch
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 299 bytes | 29.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'bugfix-branch' on GitHub by visiting:
+remote:      https://github.com/SEBAKUNDA/git-cafe-exercise/pull/new/bugfix-branch
+remote: 
+To https://github.com/SEBAKUNDA/git-cafe-exercise.git
+ * [new branch]      bugfix-branch -> bugfix-branch
+Branch 'bugfix-branch' set up to track remote branch 'bugfix-branch' from 'origin'.
+Eric-2:git-cafe-exercise mac$ 
+ ```
