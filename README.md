@@ -1436,4 +1436,32 @@ Eric-2:Gym_Git_Exercise_Solutions mac$ git push
 Everything up-to-date
 Eric-2:Gym_Git_Exercise_Solutions mac$ 
 ```
+# bundle 5
+# exercise 2
+``` bash
+Eric-2:git-cafe-exercise mac$  git status
+On branch main
+Your branch is up to date with 'origin/main'.
 
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Eric-2:git-cafe-exercise mac$  git add .
+Eric-2:git-cafe-exercise mac$  git commit -m"forked project first commit"
+[main bf2bf55] forked project first commit
+ 1 file changed, 5 insertions(+), 14 deletions(-)
+Eric-2:git-cafe-exercise mac$  git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 396 bytes | 396.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/SEBAKUNDA/git-cafe-exercise.git
+   d1d3f9c..bf2bf55  main -> main
+Eric-2:git-cafe-exercise mac$ 
+```
