@@ -1561,3 +1561,63 @@ To https://github.com/SEBAKUNDA/git-cafe-exercise.git
 Branch 'bugfix-branch' set up to track remote branch 'bugfix-branch' from 'origin'.
 Eric-2:git-cafe-exercise mac$ 
  ```
+  #exercise 3
+  ``` bash 
+Eric-2:git-cafe-exercise mac$  git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Eric-2:git-cafe-exercise mac$  git add .
+Eric-2:git-cafe-exercise mac$  git commit -m"forked project first commit"
+Eric-2:git-cafe-exercise mac$ git checkout -b feature-branch
+Switched to a new branch 'feature-branch'
+Eric-2:git-cafe-exercise mac$  git status
+On branch feature-branch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        menu.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+Eric-2:git-cafe-exercise mac$ git checkout -b bugfix-branch
+Switched to a new branch 'bugfix-branch'
+Eric-2:git-cafe-exercise mac$  git status
+On branch bugfix-branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index-4.html
+
+Eric-2:git-cafe-exercise mac$  git status
+On branch bugfix-branch
+Your branch is up to date with 'origin/bugfix-branch'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index-4.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Eric-2:git-cafe-exercise mac$  git add .
+Eric-2:git-cafe-exercise mac$  git commit -m" changing telephone number"
+[bugfix-branch ca19387]  changing telephone number
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Eric-2:git-cafe-exercise mac$ git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 318 bytes | 318.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/SEBAKUNDA/git-cafe-exercise.git
+   6ae2047..ca19387  bugfix-branch -> bugfix-branch
+  ```
