@@ -1465,3 +1465,37 @@ To https://github.com/SEBAKUNDA/git-cafe-exercise.git
    d1d3f9c..bf2bf55  main -> main
 Eric-2:git-cafe-exercise mac$ 
 ```
+ # bundle 6
+ # exercise 1
+ ```bash
+Eric-2:git-cafe-exercise mac$ git checkout -b feature-branch
+Switched to a new branch 'feature-branch'
+Eric-2:git-cafe-exercise mac$  git status
+On branch feature-branch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        menu.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+Eric-2:git-cafe-exercise mac$  git add .
+Eric-2:git-cafe-exercise mac$  git commit -m"forked project "
+[feature-branch c1085ad] forked project
+ 1 file changed, 167 insertions(+)
+ create mode 100644 menu.html
+Eric-2:git-cafe-exercise mac$  git push --set-upstream origin feature-branch
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.95 KiB | 1.95 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'feature-branch' on GitHub by visiting:
+remote:      https://github.com/SEBAKUNDA/git-cafe-exercise/pull/new/feature-branch
+remote: 
+To https://github.com/SEBAKUNDA/git-cafe-exercise.git
+ * [new branch]      feature-branch -> feature-branch
+Branch 'feature-branch' set up to track remote branch 'feature-branch' from 'origin'.
+Eric-2:git-cafe-exercise mac$ 
+ ```
